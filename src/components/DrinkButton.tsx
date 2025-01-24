@@ -14,7 +14,7 @@ const DrinkButton: React.FC<DrinkButtonProps> = ({ id, name, price, count, onOrd
     <div className='drink-container'>
         <button id={id} onClick={() => onOrder(id)}>
             <span className="drink-name">{name}</span>
-            <span className="price">{price} yen</span>
+            <span className="button-price">{price} yen</span>
         </button>
         <div id={id + '-count'} className="red-circle">{count}</div>
     </div>
