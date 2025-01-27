@@ -5,38 +5,54 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+  text-align: center;
+  padding: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+} 
+
+.buttons {
+  display: flex;             /* Make the container a flex container */
+  flex-direction: column;    /* Align the buttons vertically */
+  align-items: center;       /* Center the buttons horizontally */
+  gap: 20px;      
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.total-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 200px;
+  height: 120px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  margin: 50px 0 0 20px;
 }
 
-.card {
-  padding: 2em;
+.bill {
+  margin-bottom: 5px;
+  text-align: left;
 }
 
-.read-the-docs {
-  color: #888;
+hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 2px solid #ccc;
+}
+
+.total {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.price {
+  text-align: left;
+  display: block;
 }
