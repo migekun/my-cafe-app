@@ -66,8 +66,8 @@ function App() {
         <div className="total-container">
           <p className='bill'>Your bill</p>
           <hr></hr>
-          <span className='total'>Items ordered: {totalCount}</span>
-          <span className='price'>Total price: {totalPrice} yen</span>
+          <span id='count' className='total'>Items ordered: {totalCount}</span>
+          <span id='price' className='price'>Total price: {totalPrice} yen</span>
         </div>
       </div>
     </div>
