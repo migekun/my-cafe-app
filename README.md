@@ -1,50 +1,22 @@
-# React + TypeScript + Vite
+■ Task
+Develop a drink order system for a cafe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+■ Time Limit
+● There is no time limit once you start the test. Please feel free to revise the assignment as needed within the submission deadline outline in the email sent to you.
 
-Currently, two official plugins are available:
+■ How to Take the Test
+● Please develop the system using React and TypeScript.
+　　○ When you start the test, you will see the notation "[Implementation: JavaScript, HTML, CSS]," but please ignore this and create it using React and TypeScript.
+● Execute the following command and create with CreateReactApp:
+　　○ npx create-react-app my-app --template typescript OR yarn create react-app my-app --template typescript
+　　○ Reference: https://create-react-app.dev/docs/adding-typescript/
+　　○ Not working properly. I used vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+● Create a private repository on GitHub and grant access rights to the following 5 members: @tkcizumi, @ykdr8, @az0083, @kazizi55, @Nakamurus
+● Push the source code to GitHub and create a pull request.
+　　○ Please keep the granularity of commits as you would for when you normally develop.
+● It is not necessary to submit the code on Track Test (you can submit if you want).
+● Please send us the URL of the created pull request. (Please send by replying to the email that sent the Track Test URL)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+■ Evaluation Criteria:
+We will be focusing on your ability to meet the requirements for this assignment while taking into account testability and maintenance under a team development environment. 

@@ -1,0 +1,50 @@
+.drink-container {
+    position: relative;
+    display: inline-block;
+}
+
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 5px 8px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    position: relative;
+    width: 200px; 
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+button:hover { 
+    cursor: pointer;
+}
+
+.drink-name {
+    font-size: 16px;
+}
+
+.button-price {
+    font-size: 14px;
+}
+
+.red-circle {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
